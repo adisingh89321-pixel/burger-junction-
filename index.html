@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Craving the best burgers in Delhi? Visit Burger Junction 2.0 for fresh, juicy burgers, loaded combos, pizzas, and unique Korean-style burgers. Order now!">
+  <meta name="keywords" content="Burger Junction 2.0, Delhi burgers, fast food Delhi, Korean burgers Delhi, Aloo Tikki Burger, Cheese Burst Burger, Delhi food delivery">
+  <meta name="author" content="Burger Junction 2.0">
+  <title>Burger Junction 2.0 | Delhi's Favorite Burger Destination</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo-link">
+        <img src="assets/logo.jpg" alt="Burger Junction 2.0 Logo" class="logo-img">
+        <span class="logo-text">BURGER JUNCTION <span class="logo-accent">2.0</span></span>
+      </a>
+
+      <nav class="nav-bar" id="navbar">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="call-action hide-on-mobile">
+          <span class="call-label">Call & Order:</span>
+          <a href="tel:9289281280" class="call-number">9289281280</a>
+        </div>
+        
+        <!-- Cart Button -->
+        <button class="cart-trigger" id="cartTrigger" aria-label="Open Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cart-icon">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <a href="#menu" class="btn btn-accent header-btn">Order Now</a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <nav class="mobile-nav">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#menu" class="mobile-link">Menu</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#reviews" class="mobile-link">Reviews</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <div class="mobile-call">
+        <p>Order Now via Phone</p>
+        <a href="tel:9289281280" class="mobile-phone-link">9289281280</a>
+        <a href="tel:01144724443" class="mobile-phone-link">011-44724443</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="hero-badge badge-delivery">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-icon"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            Delivery / Takeaway
+          </span>
+          <span class="hero-badge badge-fresh">🌱 Fresh Ingredients</span>
+          <span class="hero-badge badge-price">💰 Pocket-Friendly Prices</span>
+        </div>
+        
+        <h1 class="hero-title">Delhi's Favorite <br><span class="highlight">Burger Destination</span></h1>
+        
+        <p class="hero-subtitle">
+          Freshly made burgers, loaded combos, cheesy delights, and Korean-style burgers prepared with premium ingredients and unbeatable taste.
+        </p>
+        
+        <div class="hero-actions-container">
+          <a href="tel:9289281280" class="btn btn-cta hero-btn-main">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Now To Order
+          </a>
+          <a href="#menu" class="btn btn-secondary hero-btn-sub">View Menu</a>
+        </div>
+
+        <div class="hero-quick-contact">
+          <span>Or WhatsApp order at: </span>
+          <a href="https://wa.me/919289281280" target="_blank" class="hero-wa-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="wa-icon"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.09 .953 11.46.953c-5.437 0-9.862 4.371-9.866 9.8.001 2.109.569 4.167 1.65 5.952l-.993 3.628 3.796-.98z"/></svg>
+            9289281280
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper">
+        <div class="hero-glow"></div>
+        <img src="assets/hero-burger.png" alt="Delicious Burger Junction Special Burger" class="hero-burger-img">
+        <div class="hero-stamp">
+          <span class="stamp-text">100% FRESHLY PREPARED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Most Loved Menu</h2>
+        <p class="section-subtitle">Crafted with fresh ingredients, loaded cheese, and signature sauces. Click on any item to add to your order cart!</p>
+        
+        <!-- Search and Filter Bar -->
+        <div class="menu-controls">
+          <div class="search-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="menuSearch" placeholder="Search burgers, combos, pasta, pizza...">
+          </div>
+          
+          <div class="menu-tabs">
+            <button class="tab-btn active" data-category="all">🔥 Full Menu</button>
+            <button class="tab-btn" data-category="burgers">🍔 Burgers & Combos</button>
+            <button class="tab-btn" data-category="pizzas">🍕 Pizzas & Garlic Bread</button>
+            <button class="tab-btn" data-category="snacks">🥟 Snacks & Momos</button>
+            <button class="tab-btn" data-category="pastas">🍝 Pasta & Wraps</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Item Cards will be generated dynamically by JS. -->
+      </div>
+      
+      <!-- No Results Message -->
+      <div class="no-results" id="noResults">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="no-results-icon"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+        <p>No delicious matches found. Try searching for something else!</p>
+      </div>
+
+      <!-- Quick Call Order CTA -->
+      <div class="menu-quick-cta">
+        <p class="quick-cta-text">Prefer ordering over a direct phone call?</p>
+        <a href="tel:9289281280" class="btn btn-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Call & Order Now (9289281280)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Why Customers Love Burger Junction 2.0</h2>
+        <p class="section-subtitle">We serve happiness in every single bite. Here is what makes us special.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <span class="service-icon">🌱</span>
+          </div>
+          <h3 class="service-card-title">Fresh Ingredients</h3>
+          <p class="service-card-text">Every burger is prepared fresh using handpicked, high-quality, crisp veggies and premium dairy products.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <span class="service-icon">💰</span>
+          </div>
+          <h3 class="service-card-title">Affordable Pricing</h3>
+          <p class="service-card-text">Delicious gourmet burgers at pocket-friendly, student-loving prices that won't break the bank.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <span class="service-icon">⚡</span>
+          </div>
+          <h3 class="service-card-title">Fast Service</h3>
+          <p class="service-card-text">Quick preparation and packaging so you get your food steaming hot, whether for dine-in, takeaway, or pickup.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <span class="service-icon">🧀</span>
+          </div>
+          <h3 class="service-card-title">Loaded Flavors</h3>
+          <p class="service-card-text">Cheesy, spicy, crispy, and satisfying flavors carefully formulated to please local Delhi taste buds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Get Your Favorite Burger In 3 Easy Steps</h2>
+        <p class="section-subtitle">Simple, quick, and hassle-free ordering from Delhi's favorite fast-food spot.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Browse The Menu</h3>
+          <p class="step-text">Check out our tasty range of burgers, pastas, garlic breads, and loaded combos on this site.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Call or WhatsApp Order</h3>
+          <p class="step-text">Use our interactive cart to WhatsApp your order instantly, or call us directly to place your order.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Pick Up & Enjoy</h3>
+          <p class="step-text">Walk into our junction, collect your freshly prepared, piping-hot meal, and dive into burger heaven!</p>
+        </div>
+      </div>
+
+      <div class="step-cta">
+        <a href="tel:9289281280" class="btn btn-cta">Call & Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Loved By Local Foodies</h2>
+        <p class="section-subtitle">Don't just take our word for it—here is what our wonderful customers say.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"One of the best burger places in the area. Fresh burgers and amazing taste. The Aloo Tikki Cheese Burger is an absolute steal!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <h4 class="reviewer-name">Amit Sharma</h4>
+              <span class="reviewer-status">Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The Cheese Burst Burger is absolutely delicious. Great quality, reasonable prices, and loaded with liquid cheese. Highly recommended!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">P</div>
+            <div>
+              <h4 class="reviewer-name">Pooja Gupta</h4>
+              <span class="reviewer-status">Nearby Resident</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Fast service and tasty food. Highly recommended for burger lovers. The Korean Veggie Burger has a fantastic sweet & spicy sauce."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div>
+              <h4 class="reviewer-name">Rohit Verma</h4>
+              <span class="reviewer-status">College Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="trust-section">
+    <div class="container trust-container">
+      <div class="trust-content">
+        <h2 class="trust-title">Why Choose Burger Junction 2.0?</h2>
+        <p class="trust-desc">We maintain high standards of quality and hygiene to give you the safest and tastiest fast-food experience in Delhi.</p>
+        
+        <ul class="trust-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Freshly Prepared Food — Prepared hot only after you order</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Hygienic Kitchen — Clean workspace, gloved staff, sanitized tools</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Premium Ingredients — Branded cheese, fresh buns, premium oils</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Affordable Prices — Value-focused meals for families & students</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Friendly Service — Welcoming team ready to make your day</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Local Favorite — Hundreds of happy returning customers daily</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="trust-card">
+        <h3 class="trust-card-title">Our Quality Guarantee</h3>
+        <p class="trust-card-text">"We promise to serve you delicious, hygienic, and affordable fast food that satisfies your cravings. If you are not satisfied with your meal, let us know, and we will make it right."</p>
+        <span class="trust-card-author">— The Burger Junction 2.0 Team</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-image-wrapper">
+        <img src="assets/logo.jpg" alt="Burger Junction Logo Badge" class="about-logo">
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">Serving Delicious Burgers In Delhi</h2>
+        <p class="about-text">
+          Burger Junction 2.0 is dedicated to serving fresh, delicious, and affordable burgers to the local community. Whether you're craving classic burgers, cheesy specialties, Korean-style burgers, or combo meals, our team is committed to delivering great taste and excellent service every time.
+        </p>
+        <p class="about-text">
+          We pride ourselves on using quality ingredients, creating signature sauces in-house, and offering quick preparation for dine-in, takeaway, and pickup. We are proud to be the neighborhood's go-to spot for student hangouts, family dinners, and midnight burger cravings.
+        </p>
+        
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Menu Items</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Veg Options</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4.8★</span>
+            <span class="stat-label">User Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="final-cta-bg"></div>
+    <div class="container text-center relative-content">
+      <h2 class="cta-title">Craving A Delicious Burger?</h2>
+      <p class="cta-subtitle">Call now and place your order today. We'll prepare it fresh and have it ready for you!</p>
+      
+      <div class="cta-phones">
+        <div class="phone-box">
+          <span class="phone-type">Landline</span>
+          <a href="tel:01144724443" class="phone-number-link">011-44724443</a>
+        </div>
+        <div class="phone-box">
+          <span class="phone-type">Mobile / WhatsApp</span>
+          <a href="tel:9289281280" class="phone-number-link">9289281280</a>
+        </div>
+      </div>
+
+      <div class="cta-actions">
+        <a href="tel:9289281280" class="btn btn-cta btn-large">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Call Now
+        </a>
+        <a href="https://maps.google.com/?q=Plot+No.+2,+Jain+Nagar,+40+Foot+Road,+Near+Punjab+Sweets,+Delhi+-+110081" target="_blank" class="btn btn-secondary btn-large">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <a href="#home" class="footer-logo">
+          <img src="assets/logo.jpg" alt="Burger Junction 2.0 Logo" class="footer-logo-img">
+          <span>BURGER JUNCTION 2.0</span>
+        </a>
+        <p class="footer-desc">Delhi's ultimate spot for fresh, cheesy, and spicy burgers at prices that will make you smile.</p>
+        <div class="social-links">
+          <a href="https://wa.me/919289281280" target="_blank" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.09 .953 11.46.953c-5.437 0-9.862 4.371-9.866 9.8.001 2.109.569 4.167 1.65 5.952l-.993 3.628 3.796-.98z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">Contact & Location</h4>
+        <p class="footer-address">
+          <strong>Address:</strong><br>
+          Plot No. 2, Jain Nagar, 40 Foot Road,<br>
+          Near Punjab Sweets, Delhi - 110081
+        </p>
+        <p class="footer-phones">
+          <strong>Phone Ordering:</strong><br>
+          <a href="tel:9289281280">9289281280</a> (Mobile)<br>
+          <a href="tel:01144724443">011-44724443</a> (Landline)
+        </p>
+      </div>
+
+      <div class="footer-hours">
+        <h4 class="footer-title">Business Hours</h4>
+        <ul class="hours-list">
+          <li><span>Monday - Sunday:</span> <span>11:00 AM - 11:00 PM</span></li>
+          <li><span class="open-status">🟢 We are Open!</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Map Embedded Section -->
+    <div class="footer-map container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.423985552399!2d77.05436667554907!3d28.736785875608756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390daf9ef2c48e89%3A0xe54e66d92ec09e6c!2sJain+Nagar%2C+Rohini%2C+Delhi%2C+110081!5e0!3m2!1sen!2sin!4v1716382103849!5m2!1sen!2sin" width="100%" height="250" style="border:0; border-radius: 8px; filter: grayscale(1) invert(0.9) contrast(1.2);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Burger Junction 2.0. All Rights Reserved. Designed for ultimate taste.</p>
+        <p>Developed with ❤️ in Delhi</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Cart Drawer Sidebar -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        Your Order Cart
+      </h3>
+      <button class="cart-close" id="cartClose" aria-label="Close Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="cart-items-wrapper" id="cartItems">
+      <!-- Items will be generated here -->
+      <div class="cart-empty-message">
+        <span class="empty-icon">🍔</span>
+        <p>Your cart is empty.</p>
+        <p class="empty-sub">Add delicious burgers and combos to start your order!</p>
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartFooter" style="display: none;">
+      <!-- Order details input -->
+      <div class="cart-details">
+        <label for="orderName">Your Name:</label>
+        <input type="text" id="orderName" placeholder="Enter your name (optional)">
+        
+        <label for="orderType">Order Mode:</label>
+        <div class="order-type-toggle">
+          <label class="toggle-btn active">
+            <input type="radio" name="orderType" value="Takeaway" checked> Takeaway
+          </label>
+          <label class="toggle-btn">
+            <input type="radio" name="orderType" value="Delivery"> Delivery
+          </label>
+        </div>
+      </div>
+
+      <div class="cart-totals">
+        <div class="total-row">
+          <span>Items Subtotal:</span>
+          <span class="total-price" id="cartSubtotal">₹0</span>
+        </div>
+        <p class="cart-tax-info">Prices are inclusive of all taxes. Free packaging.</p>
+      </div>
+
+      <div class="cart-actions-drawer">
+        <button class="btn btn-cta btn-full" id="whatsappCheckoutBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btn-icon-wa"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.09 .953 11.46.953c-5.437 0-9.862 4.371-9.866 9.8.001 2.109.569 4.167 1.65 5.952l-.993 3.628 3.796-.98z"/></svg>
+          Send Order on WhatsApp
+        </button>
+        <a href="tel:9289281280" class="btn btn-secondary btn-full" id="callCheckoutBtn">
+          Call to Place Order
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+
+  <!-- Mobile Floating Quick-CTAs -->
+  <div class="floating-ctas">
+    <a href="tel:9289281280" class="floating-btn floating-call" aria-label="Call Now">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="float-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919289281280" target="_blank" class="floating-btn floating-wa" aria-label="WhatsApp Order">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="float-icon-wa"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.09 .953 11.46.953c-5.437 0-9.862 4.371-9.866 9.8.001 2.109.569 4.167 1.65 5.952l-.993 3.628 3.796-.98z"/></svg>
+      <span>WhatsApp Order</span>
+    </a>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
